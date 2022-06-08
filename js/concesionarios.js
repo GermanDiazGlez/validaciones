@@ -4,7 +4,7 @@ class Concesionarios {
     var container = $(".concesionarios");
     var ubicaciones = [];
     //Read nodes
-    $.get("http://localhost/Fuentes/xml/concesionarios.xml", function (xml) {
+    $.get("https://uo258472.github.io/validaciones/xml/concesionarios.xml", function (xml) {
       $(xml)
         .find("concesionario")
         .each(function () {
