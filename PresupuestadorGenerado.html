@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Presupuestador</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.png" alt="logoConc" />
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./noticias.html">Actualidad</a></li>
+        <li><a href="./empresa.html">Quienes somos</a></li>
+        <li><a href="./concesionarios.html">Nuestros concesionarios</a></li>
+        <li><a href="./vehiculos.html">Vehículos</a></li>
+        <li><a href="./php/estadisticas.php">Estadisticas</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Formulario para el presupuestado</h1>
+      <img src="./images/Concesionarios/Documentación.jpg" alt="fotoDocu" />
+      <p>
+        Rellene el siguiente formulario con sus datos para proceder a
+        presupuestar el vehículo indicado.
+      </p>
+    </header>
+    <main>
+      <section class="formul">
+        <h2>Datos vehículo:</h2>
+        <p id="datosVehiculo1">Volskwagen</p>
+        <p id="datosVehiculo2">Golf4</p>
+        <form action="./php/presupuesto.php" method="post">
+          <label for="nom">Nombre:</label>
+          <input id="nom" type="text" name="nombre" required="" />
+          <label for="apell">Apellidos:</label>
+          <input id="apell" type="text" name="apellidos" required="" />
+          <label for="ema">Email:</label>
+          <input id="ema" type="email" name="email" required="" />
+          <label for="mar">Marca:</label>
+          <input id="mar" type="text" name="marca" value="" readonly="" />
+          <input type="hidden" name="id" value="3 " />
+          <input type="submit" value="Enviar datos" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Página concesionario creada por Germán Díaz.</p>
+      <p>
+        Si quieres contactar conmigo, hazlo a través del siguiente email
+        <a href="mailto:uo258472@uniovi.es">uo258472@uniovi.es.</a>
+      </p>
+      <script src="./js/presupuesto.js"></script>
+    </footer>
+  </body>
+</html>
