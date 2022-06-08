@@ -3,7 +3,7 @@
 class Vehiculos {
   constructor() {
     $.ajax({
-      url: "http://localhost/Fuentes/php/vehiculos.php",
+      url: "https://uo258472.github.io/validaciones/php/vehiculos.php",
       type: "GET",
       success: function (response) {
         var container = $("#vehiculos");
