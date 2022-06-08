@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="concesionarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="concesionario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="concesionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:element ref="marca" />
+        <xs:element ref="numeroVehiculos" />
+        <xs:element ref="ubicacion" />
+        <xs:element ref="imagen" />
+        <xs:element ref="empleados" />
+        <xs:element ref="direccion" />
+      </xs:sequence>
+      <xs:attribute name="tipo-vehiculo" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Deportivo" />
+            <xs:enumeration value="Todoterreno" />
+            <xs:enumeration value="Electrico" />
+            <xs:enumeration value="SUV" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="marca" type="xs:string" />
+  <xs:element name="numeroVehiculos" type="xs:decimal" />
+  <xs:element name="ubicacion">
+    <xs:complexType>
+      <xs:attribute name="lat" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="lng" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imagen">
+    <xs:complexType>
+      <xs:attribute name="src" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="title" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="alt" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="empleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="empleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="empleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre-empleado" />
+        <xs:element ref="apellidos" />
+        <xs:element ref="telefono" />
+      </xs:sequence>
+      <xs:attribute name="puesto" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Ventas" />
+            <xs:enumeration value="Oficina" />
+            <xs:enumeration value="Asesor" />
+            <xs:enumeration value="Director" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre-empleado" type="xs:string" />
+  <xs:element name="apellidos" type="xs:string" />
+  <xs:element name="telefono" type="xs:decimal" />
+  <xs:element name="direccion" type="xs:string" />
+</xs:schema>

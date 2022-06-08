@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concesionarios</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/geolocalizacion.js"></script>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.png" alt="logoConc" />
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./noticias.html">Actualidad</a></li>
+        <li><a href="./empresa.html">Quienes somos</a></li>
+        <li><a href="./concesionarios.html">Nuestros concesionarios</a></li>
+        <li><a href="./vehiculos.html">Vehículos</a></li>
+        <li><a href="./php/estadisticas.php">Estadisticas</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Nuestros concesionarios</h1>
+      <img
+        src="./images/Concesionarios/concesionarios.jpg"
+        alt="imgConc"
+        class="concesionario"
+      />
+    </header>
+    <main>
+      <section class="concesionarios">
+        <h2>Concesionarios disponibles</h2>
+      </section>
+      <section class="mapa">
+        <h2>Mapa de los concesionarios</h2>
+        <script
+          async
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdFVbX1HsC2RNi2ChD6xVVcI-XWph2dac&callback=geoloc.initMap"
+        ></script>
+        <div id="map"></div>
+      </section>
+    </main>
+    <footer>
+      <script src="./js/concesionarios.js"></script>
+      <p>Página concesionario creada por Germán Díaz.</p>
+      <p>
+        Si quieres contactar conmigo, hazlo a través del siguiente email
+        <a href="mailto:uo258472@uniovi.es">uo258472@uniovi.es.</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE concesionarios [
+<!ELEMENT concesionarios (concesionario+)>
+<!ELEMENT concesionario (nombre, marca, numeroVehiculos, ubicacion, imagen, empleados, direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT numeroVehiculos (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (nombre-empleado, apellidos, telefono)>
+<!ELEMENT nombre-empleado (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ATTLIST concesionarios xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST concesionarios xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ATTLIST concesionario tipo-vehiculo CDATA #REQUIRED>
+<!ATTLIST ubicacion 
+    lat CDATA #REQUIRED
+    lng CDATA #REQUIRED>
+<!ATTLIST imagen 
+    src CDATA #REQUIRED
+    title CDATA #REQUIRED
+    alt CDATA #REQUIRED>
+<!ATTLIST empleado puesto CDATA #REQUIRED>
+]>
+
+<concesionarios xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='./concesionarios.xsd'>
+    <concesionario tipo-vehiculo="Deportivo">
+        <nombre>Varocar</nombre>
+        <marca>Seat</marca>
+        <numeroVehiculos>38</numeroVehiculos>
+        <ubicacion lat="43.31147423748632" lng="-5.695053703377107"></ubicacion>
+        <imagen src="varocar.jpg" title="VarocarFoto" alt="Concesionario Varocar"></imagen>
+        <empleados>
+            <empleado puesto="Ventas">
+                <nombre-empleado>Juan</nombre-empleado>
+                <apellidos>Mendez Rodriguez</apellidos>
+                <telefono>621655521</telefono>
+            </empleado>
+            <empleado puesto="Ventas">
+                <nombre-empleado>Elena</nombre-empleado>
+                <apellidos>Lopez Rodriguez</apellidos>
+                <telefono>691654551</telefono>
+            </empleado>
+        </empleados>
+        <direccion>Calle La Traba La Felguera Asturias España</direccion>
+    </concesionario>
+    <concesionario tipo-vehiculo="Deportivo">
+        <nombre>Tartiere Auto</nombre>
+        <marca>Volkswagen</marca>
+        <numeroVehiculos>43</numeroVehiculos>
+        <ubicacion lat="43.40694059256487" lng="-5.804820702131801"></ubicacion>
+        <imagen src="tartiere.jpg" title="TartiereFoto" alt="Concesionario Tartiere"></imagen>
+        <empleados>
+            <empleado puesto="Ventas">
+                <nombre-empleado>Enrique</nombre-empleado>
+                <apellidos>Gonzalez Gonzalez</apellidos>
+                <telefono>641655632</telefono>
+            </empleado>
+            <empleado puesto="Oficina">
+                <nombre-empleado>Marta</nombre-empleado>
+                <apellidos>Gonzalez Gonzalez</apellidos>
+                <telefono>671655332</telefono>
+            </empleado>
+        </empleados>
+        <direccion>Calle Avenida de Gijon Lugones Asturias España</direccion>
+    </concesionario>
+    <concesionario tipo-vehiculo="Todoterreno">
+        <nombre>Mitsubishi Cisacar</nombre>
+        <marca>Mitsubishi</marca>
+        <numeroVehiculos>20</numeroVehiculos>
+        <ubicacion lat="43.39239186388887" lng="-5.79372357870682"></ubicacion>
+        <imagen src="mitsubishi.jpg" title="MitsubishiFoto" alt="Concesionario Mitsubishi"></imagen>
+        <empleados>
+            <empleado puesto="Ventas">
+                <nombre-empleado>Antonio</nombre-empleado>
+                <apellidos>Sanchez Garcia</apellidos>
+                <telefono>641655886</telefono>
+            </empleado>
+            <empleado puesto="Asesor">
+                <nombre-empleado>Laura</nombre-empleado>
+                <apellidos>Perez Martínez</apellidos>
+                <telefono>666655886</telefono>
+            </empleado>
+            <empleado puesto="Director">
+                <nombre-empleado>Claudia</nombre-empleado>
+                <apellidos>Gomez Bermejo</apellidos>
+                <telefono>676262886</telefono>
+            </empleado>
+        </empleados>
+        <direccion>Calle Aldea de Paredes Parque Principado Lugones Asturias España</direccion>
+    </concesionario>
+    <concesionario tipo-vehiculo="Deportivo">
+        <nombre>Autos Myr</nombre>
+        <marca>Seat</marca>
+        <numeroVehiculos>13</numeroVehiculos>
+        <ubicacion lat="43.34534701651665" lng="-5.852967484443624"></ubicacion>
+        <imagen src="myr.jpg" title="MyrFoto" alt="Concesionario Myr"></imagen>
+        <empleados>
+            <empleado puesto="Ventas">
+                <nombre-empleado>Juan José</nombre-empleado>
+                <apellidos>Soler Gonzalez</apellidos>
+                <telefono>649995632</telefono>
+            </empleado>
+        </empleados>
+        <direccion>Calle José García Nieto Lugones Asturias España</direccion>
+    </concesionario>
+</concesionarios>

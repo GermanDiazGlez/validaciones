@@ -1,0 +1,250 @@
+/*001*/
+body {
+  background-color: #f0f0f0;
+  color: black;
+  margin: 0;
+}
+
+/*002*/
+body p {
+  font-size: 1.5rem;
+}
+
+/*002*/
+body h1 {
+  font-size: 4rem;
+}
+
+/*002*/
+body h2 {
+  font-size: 3.5rem;
+}
+
+/*002*/
+body h3 {
+  font-size: 2rem;
+}
+
+/*002*/
+body nav {
+  background-color: #919191;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1%;
+  height: 3em;
+  align-items: center;
+  gap: 1em;
+}
+
+/*003*/
+body nav ul {
+  display: flex;
+  gap: 1em;
+}
+
+/*004*/
+body nav ul li {
+  list-style-type: none;
+}
+
+/*005*/
+body nav ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
+  font-size: 1.6rem;
+}
+
+/*003*/
+body nav img {
+  height: 100%;
+  width: auto;
+}
+
+/*002*/
+body header {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*003*/
+body header h1 {
+  color: white;
+  background-color: black;
+  padding: 0.2em;
+}
+
+/*003*/
+body header img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+/*013*/
+body header img.conocenos {
+  position: relative;
+  width: 50%;
+}
+
+/*003*/
+body header p {
+  font-size: 1.5rem;
+  padding: 0.5em;
+  text-align: center;
+  color: aliceblue;
+  background-color: black;
+}
+
+/*002*/
+body section {
+  background-color: #a0dcff;
+  color: black;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+/*003*/
+body section ul {
+  font-size: 1.6rem;
+}
+
+/*012*/
+body section.quien {
+  padding: 3em;
+}
+
+/*012*/
+body section.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+/*013*/
+body section.news h2 {
+  grid-column: 1/4;
+  width: 100%;
+  text-align: center;
+}
+
+/*013*/
+body section.news article {
+  background-color: #ffae00;
+  color: black;
+  padding: 2em;
+  border: 0.1em solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*014*/
+body section.news article p {
+  display: flex;
+}
+
+/*014*/
+body section.news article h3 {
+  text-align: center;
+  text-decoration: none;
+  background-color: inherit;
+  color: rgba(0, 0, 0, 0.91);
+  font-size: 1.6rem;
+}
+
+/*014*/
+body section.news article ul {
+  font-size: 1.6rem;
+}
+
+/*012*/
+body section.concesionarios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/*013*/
+body section.concesionarios h2 {
+  flex: 1 0 100%;
+  text-align: center;
+}
+
+/*013*/
+body section.concesionarios section {
+  flex: 1 0 33%;
+  padding: 0.1em;
+  display: flow-root;
+}
+
+/*013*/
+body section.vehiculos ul {
+  background-color: azure;
+  color: black;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  padding: 1em;
+  border: 0.2em solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*013*/
+body section.estadisticas ul {
+  background-color: azure;
+  color: black;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  padding: 1em;
+  border: 0.2em solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*013*/
+body section.formul form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  gap: 0.6em;
+  font-size: 1.9rem;
+}
+
+/*013*/
+body section.formul p {
+  font-size: 2rem;
+}
+
+/*002*/
+body footer {
+  height: 10em;
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #b9b9b9;
+  color: black;
+}
+
+/*003*/
+body footer p {
+  font-size: 1.4rem;
+}
+
+/*101*/
+body #map {
+  height: 40em;
+}
+/*# sourceMappingURL=style.css.map */
